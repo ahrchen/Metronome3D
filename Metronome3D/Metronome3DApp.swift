@@ -13,9 +13,5 @@ struct Metronome3DApp: App {
         WindowGroup {
             ContentView()
         }.windowStyle(.volumetric)
-
-        ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
-        }
     }
 }

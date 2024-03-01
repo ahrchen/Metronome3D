@@ -10,9 +10,9 @@
 		EEE1812A2B926FA600564E68 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = EEE181292B926FA600564E68 /* RealityKitContent */; };
 		EEE1812C2B926FA600564E68 /* Metronome3DApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE1812B2B926FA600564E68 /* Metronome3DApp.swift */; };
 		EEE1812E2B926FA600564E68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE1812D2B926FA600564E68 /* ContentView.swift */; };
-		EEE181302B926FA600564E68 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE1812F2B926FA600564E68 /* ImmersiveView.swift */; };
 		EEE181322B926FA700564E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE181312B926FA700564E68 /* Assets.xcassets */; };
 		EEE181352B926FA700564E68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE181342B926FA700564E68 /* Preview Assets.xcassets */; };
+		EEE1813D2B9278EC00564E68 /* studio.skybox in Resources */ = {isa = PBXBuildFile; fileRef = EEE1813C2B9278EC00564E68 /* studio.skybox */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		EEE181282B926FA600564E68 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		EEE1812B2B926FA600564E68 /* Metronome3DApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome3DApp.swift; sourceTree = "<group>"; };
 		EEE1812D2B926FA600564E68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		EEE1812F2B926FA600564E68 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		EEE181312B926FA700564E68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEE181342B926FA700564E68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EEE181362B926FA700564E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE1813C2B9278EC00564E68 /* studio.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = studio.skybox; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +58,9 @@
 		EEE181262B926FA600564E68 /* Metronome3D */ = {
 			isa = PBXGroup;
 			children = (
+				EEE1813C2B9278EC00564E68 /* studio.skybox */,
 				EEE1812B2B926FA600564E68 /* Metronome3DApp.swift */,
 				EEE1812D2B926FA600564E68 /* ContentView.swift */,
-				EEE1812F2B926FA600564E68 /* ImmersiveView.swift */,
 				EEE181312B926FA700564E68 /* Assets.xcassets */,
 				EEE181362B926FA700564E68 /* Info.plist */,
 				EEE181332B926FA700564E68 /* Preview Content */,
@@ -146,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE181352B926FA700564E68 /* Preview Assets.xcassets in Resources */,
+				EEE1813D2B9278EC00564E68 /* studio.skybox in Resources */,
 				EEE181322B926FA700564E68 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,7 +160,6 @@
 			files = (
 				EEE1812E2B926FA600564E68 /* ContentView.swift in Sources */,
 				EEE1812C2B926FA600564E68 /* Metronome3DApp.swift in Sources */,
-				EEE181302B926FA600564E68 /* ImmersiveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
