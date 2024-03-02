@@ -13,6 +13,8 @@
 		EEE181322B926FA700564E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE181312B926FA700564E68 /* Assets.xcassets */; };
 		EEE181352B926FA700564E68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE181342B926FA700564E68 /* Preview Assets.xcassets */; };
 		EEE1813D2B9278EC00564E68 /* studio.skybox in Resources */ = {isa = PBXBuildFile; fileRef = EEE1813C2B9278EC00564E68 /* studio.skybox */; };
+		EEE181412B92A43B00564E68 /* metronomeSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEE181402B92A43B00564E68 /* metronomeSound.mp3 */; };
+		EEE181452B92A8D600564E68 /* MetronomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE181442B92A8D600564E68 /* MetronomeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		EEE181342B926FA700564E68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EEE181362B926FA700564E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEE1813C2B9278EC00564E68 /* studio.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = studio.skybox; sourceTree = "<group>"; };
+		EEE181402B92A43B00564E68 /* metronomeSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = metronomeSound.mp3; sourceTree = "<group>"; };
+		EEE181442B92A8D600564E68 /* MetronomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,11 @@
 		EEE181262B926FA600564E68 /* Metronome3D */ = {
 			isa = PBXGroup;
 			children = (
+				EEE181402B92A43B00564E68 /* metronomeSound.mp3 */,
 				EEE1813C2B9278EC00564E68 /* studio.skybox */,
 				EEE1812B2B926FA600564E68 /* Metronome3DApp.swift */,
 				EEE1812D2B926FA600564E68 /* ContentView.swift */,
+				EEE181442B92A8D600564E68 /* MetronomeModel.swift */,
 				EEE181312B926FA700564E68 /* Assets.xcassets */,
 				EEE181362B926FA700564E68 /* Info.plist */,
 				EEE181332B926FA700564E68 /* Preview Content */,
@@ -148,6 +154,7 @@
 				EEE181352B926FA700564E68 /* Preview Assets.xcassets in Resources */,
 				EEE1813D2B9278EC00564E68 /* studio.skybox in Resources */,
 				EEE181322B926FA700564E68 /* Assets.xcassets in Resources */,
+				EEE181412B92A43B00564E68 /* metronomeSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE1812E2B926FA600564E68 /* ContentView.swift in Sources */,
+				EEE181452B92A8D600564E68 /* MetronomeModel.swift in Sources */,
 				EEE1812C2B926FA600564E68 /* Metronome3DApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,7 +1,8 @@
 {
   "advancedEditorSelectedIdentifier" : "ProjectBrowser",
   "openSceneRelativePaths" : [
-    "Immersive.usda"
+    "Immersive.usda",
+    "Metronome.usda"
   ],
   "recentIdentifiers" : {
     "852CA42A-56ED-4FC7-832E-2BE9A061923B" : [
@@ -326,5 +327,5 @@
       }
     ]
   },
-  "selectedSceneRelativePath" : "Immersive.usda"
+  "selectedSceneRelativePath" : "Metronome.usda"
 }

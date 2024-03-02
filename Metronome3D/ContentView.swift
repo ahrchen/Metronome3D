@@ -9,10 +9,10 @@ import SwiftUI
 import RealityKit
 import RealityKitContent
 
-struct ContentView: View {
 
-    @State private var isPlaying = false
-    @State private var bpm: Double = 90.0
+var metronomeEntity = Entity()
+struct ContentView: View {
+    @Environment(MetronomeModel.self) private var metronomeModel
     
     var body: some View {
         VStack {
@@ -20,31 +20,51 @@ struct ContentView: View {
                 metronome
                 metronomeControls
             }
+            .onReceive(metronomeModel.timer) { _ in
+                if metronomeModel.isPlaying {
+                    metronomeModel.player.play()
+                    metronomeModel.player.prepareToPlay()
+                }
+            }
         }
     }
     
     var metronome: some View {
         RealityView { content in
             // Add the initial RealityKit content
-            if let metronomeEntity = try? await Entity(named: "Metronome", in: realityKitContentBundle), let environment = try? await EnvironmentResource(named: "studio") {
-                
+            if let metronome = try? await Entity(named: "Metronome", in: realityKitContentBundle), let environment = try? await EnvironmentResource(named: "studio") {
+                metronomeEntity = metronome
                 metronomeEntity.components.set(ImageBasedLightComponent(source: .single(environment)))
                 metronomeEntity.components.set(ImageBasedLightReceiverComponent(imageBasedLight: metronomeEntity))
                 metronomeEntity.components.set(GroundingShadowComponent(castsShadow: true))
-        
+                
                 content.add(metronomeEntity)
+            }
+        }
+        .onReceive(metronomeModel.timer) { _ in
+            if let tige = metronomeEntity.findEntity(named: "Tige_1") {
+                if metronomeModel.isPlaying {
+                    if tige.transform.rotation == .init(angle: 0.5, axis: [0,0,1]) {
+                        tige.transform.rotation = .init(angle: -0.5, axis: [0,0,1])
+                        tige.playAnimation(metronomeModel.animateSwingLeft)
+                    } else {
+                        tige.transform.rotation = .init(angle: 0.5, axis: [0,0,1])
+                        tige.playAnimation(metronomeModel.animateSwingRight)
+                    }
+                }
             }
         }
     }
     
     var metronomeControls: some View {
-        VStack {
+        @Bindable var model = metronomeModel
+        return VStack {
             Button {
                 Task {
-                    isPlaying.toggle()
+                    metronomeModel.isPlaying.toggle()
                 }
             } label: {
-                Label(isPlaying ? "Play" : "Pause", systemImage: isPlaying ? "play" : "pause")
+                Label(metronomeModel.isPlaying ? "Pause" : "Play", systemImage: metronomeModel.isPlaying ? "pause" : "play")
             }
             .frame(width: 400)
             .buttonStyle(.borderless)
@@ -53,10 +73,10 @@ struct ContentView: View {
             .glassBackgroundEffect(in: .rect(cornerRadius: 50))
             
             VStack {
-                Slider(value: $bpm, in: 40...134, step: 1)
+                Slider(value: $model.bpm, in: 40...134, step: 1)
             }
             .controlSize(.extraLarge)
-            Text("\(Int(bpm)) BPM")
+            Text("\(Int(model.bpm)) BPM")
                 .font(.largeTitle)
         }
         .frame(width: 400, height: 500)

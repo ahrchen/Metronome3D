@@ -24,7 +24,7 @@
       [
         "1D572CEB-057A-41C3-B575-04C37501A3C0",
         "Root",
-        "Sphere_Right"
+        "Sphere_Left"
       ],
       {
         "isExpanded" : true,
@@ -33,7 +33,7 @@
       [
         "1D572CEB-057A-41C3-B575-04C37501A3C0",
         "Root",
-        "Sphere_Left"
+        "Sphere_Right"
       ],
       {
         "isExpanded" : true,
@@ -59,16 +59,8 @@
         "378E1118-212A-40FA-A237-E95190A8962D",
         "Root",
         "Vintage_Metronome",
-        "Materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "378E1118-212A-40FA-A237-E95190A8962D",
-        "Root",
-        "Vintage_Metronome"
+        "Meshes",
+        "Sketchfab_model"
       ],
       {
         "isExpanded" : true,
@@ -78,7 +70,7 @@
         "378E1118-212A-40FA-A237-E95190A8962D",
         "Root",
         "Vintage_Metronome",
-        "Meshes"
+        "Materials"
       ],
       {
         "isExpanded" : true,
@@ -96,8 +88,16 @@
         "378E1118-212A-40FA-A237-E95190A8962D",
         "Root",
         "Vintage_Metronome",
-        "Meshes",
-        "Sketchfab_model"
+        "Meshes"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "378E1118-212A-40FA-A237-E95190A8962D",
+        "Root",
+        "Vintage_Metronome"
       ],
       {
         "isExpanded" : true,
@@ -109,29 +109,6 @@
     "objectMetadataList" : [
       [
         "852CA42A-56ED-4FC7-832E-2BE9A061923B",
-        "Root",
-        "Vintage_Metronome"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
-        "Root",
-        "Vintage_Metronome",
-        "Meshes",
-        "Sketchfab_model",
-        "root",
-        "GLTF_SceneRootNode",
-        "M______tronome_0"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
         "Root"
       ],
       {
@@ -141,68 +118,7 @@
       [
         "852CA42A-56ED-4FC7-832E-2BE9A061923B",
         "Root",
-        "Vintage_Metronome",
-        "Meshes",
-        "Sketchfab_model",
-        "root"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
-        "Root",
-        "Vintage_Metronome",
-        "Meshes",
-        "Sketchfab_model",
-        "root",
-        "GLTF_SceneRootNode"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
-        "Root",
-        "Vintage_Metronome",
-        "Meshes",
-        "Sketchfab_model"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
-        "Root",
-        "Vintage_Metronome",
-        "Meshes",
-        "Sketchfab_model",
-        "root",
-        "GLTF_SceneRootNode",
-        "Tige_1"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
-        "Root",
-        "Vintage_Metronome",
-        "Meshes"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
-        "Root",
-        "Vintage_Metronome",
-        "Materials"
+        "Vintage_Metronome"
       ],
       {
         "isExpanded" : true,
@@ -228,10 +144,94 @@
         "Vintage_Metronome",
         "Meshes",
         "Sketchfab_model",
+        "root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
+        "Root",
+        "Vintage_Metronome",
+        "Meshes"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
+        "Root",
+        "Vintage_Metronome",
+        "Meshes",
+        "Sketchfab_model",
+        "root",
+        "GLTF_SceneRootNode",
+        "Tige_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
+        "Root",
+        "Vintage_Metronome",
+        "Meshes",
+        "Sketchfab_model",
         "root",
         "GLTF_SceneRootNode",
         "Tige_1",
         "Object_6"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
+        "Root",
+        "Vintage_Metronome",
+        "Meshes",
+        "Sketchfab_model"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
+        "Root",
+        "Vintage_Metronome",
+        "Meshes",
+        "Sketchfab_model",
+        "root",
+        "GLTF_SceneRootNode"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
+        "Root",
+        "Vintage_Metronome",
+        "Meshes",
+        "Sketchfab_model",
+        "root",
+        "GLTF_SceneRootNode",
+        "M______tronome_0"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "852CA42A-56ED-4FC7-832E-2BE9A061923B",
+        "Root",
+        "Vintage_Metronome",
+        "Materials"
       ],
       {
         "isExpanded" : true,
