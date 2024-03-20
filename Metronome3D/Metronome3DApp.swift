@@ -14,5 +14,10 @@ struct Metronome3DApp: App {
             ContentView()
                 .environment(MetronomeModel())
         }.windowStyle(.volumetric)
+        
+        WindowGroup(id: "credits") {
+            CreditsView()
+        }
+        .defaultSize(CGSize(width: 350, height: 350))
     }
 }

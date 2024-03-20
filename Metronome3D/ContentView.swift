@@ -13,18 +13,29 @@ import RealityKitContent
 var metronomeEntity = Entity()
 struct ContentView: View {
     @Environment(MetronomeModel.self) private var metronomeModel
+    @Environment(\.openWindow) private var openWindow
+    @State var isLoading = true
     
     var body: some View {
         VStack {
             ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
                 metronome
                 metronomeControls
-            }
-            .onReceive(metronomeModel.timer) { _ in
-                if metronomeModel.isPlaying {
-                    metronomeModel.player.play()
-                    metronomeModel.player.prepareToPlay()
+                Button {
+                    openWindow(id: "credits")
+                } label: {
+                    Label(isLoading ? "Loading Assets" : "Credits", systemImage: "")
                 }
+                .offset(y: isLoading ? -300 : -200)
+                .buttonStyle(.borderless)
+                .labelStyle(.titleOnly)
+            }
+        }
+        .progressViewStyle(.circular)
+        .onReceive(metronomeModel.timer) { _ in
+            if metronomeModel.isPlaying {
+                metronomeModel.player.play()
+                metronomeModel.player.prepareToPlay()
             }
         }
     }
@@ -40,6 +51,7 @@ struct ContentView: View {
                 
                 content.add(metronomeEntity)
             }
+            isLoading = false
         }
         .onReceive(metronomeModel.timer) { _ in
             if let tige = metronomeEntity.findEntity(named: "Tige_1") {
@@ -79,7 +91,7 @@ struct ContentView: View {
             Text("\(Int(model.bpm)) BPM")
                 .font(.largeTitle)
         }
-        .frame(width: 400, height: 500)
+        .frame(width: 400, height: 550)
         .offset(y: -250)
     }
 }

@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "MetronomeAppBackIcon2.png",
       "idiom" : "vision",
       "scale" : "2x"
     }
